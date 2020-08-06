@@ -7,8 +7,8 @@ objectmeta:
     namespace: matousjobanek-host-06171653
     selflink: /apis/toolchain.dev.openshift.com/v1alpha1/namespaces/matousjobanek-host-06171653/masteruserrecords/cookielover10
     uid: 4f829bc8-1bf9-4ad6-b0cb-a083c095d6df
-    resourceversion: "451503"
-    generation: 3
+    resourceversion: "452483"
+    generation: 4
     creationtimestamp: "2020-08-06T16:09:42Z"
     deletiontimestamp: null
     deletiongraceperiodseconds: null
@@ -34,7 +34,7 @@ spec:
     deprovisioned: false
     useraccounts:
       - targetcluster: member-crc-45nsk
-        syncindex: "451498"
+        syncindex: "452481"
         spec:
             useraccountspecbase:
                 nslimit: default
@@ -58,4 +58,18 @@ status:
         reason: Provisioning
         message: ""
         lastupdatedtime: null
-    useraccounts: []
+    useraccounts:
+      - cluster:
+            name: member-crc-45nsk
+            apiendpoint: https://api.crc.testing:6443
+            consoleurl: https://console-openshift-console.apps-crc.testing/
+            chedashboardurl: ""
+        syncindex: "451498"
+        useraccountstatus:
+            conditions:
+              - type: Ready
+                status: "False"
+                lasttransitiontime: "2020-08-06T16:09:42Z"
+                reason: Provisioning
+                message: ""
+                lastupdatedtime: null
