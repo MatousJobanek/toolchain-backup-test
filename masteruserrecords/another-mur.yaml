@@ -1,1 +1,47 @@
-{"metadata":{"name":"another-mur","namespace":"toolchain-host-operator","creationTimestamp":null,"labels":{"toolchain.dev.openshift.com/basic-tier-hash":"f5d03570400265ce243ba6d0916b2e44"}},"spec":{"userID":"69ea3729-9ad1-4ab6-ae4d-bb82a3a45f58","userAccounts":[{"targetCluster":"member-cluster","syncIndex":"123abc","spec":{"nsLimit":"basic","nsTemplateSet":{"tierName":"basic","namespaces":[{"templateRef":"basic-dev-123abc"},{"templateRef":"basic-code-123abc"},{"templateRef":"basic-stage-123abc"}],"clusterResources":{"templateRef":"basic-clusterresources-654321a"}}}}]},"status":{}}
+typemeta:
+    kind: ""
+    apiversion: ""
+objectmeta:
+    name: another-mur
+    generatename: ""
+    namespace: toolchain-host-operator
+    selflink: ""
+    uid: ""
+    resourceversion: ""
+    generation: 0
+    creationtimestamp: "0001-01-01T00:00:00Z"
+    deletiontimestamp: null
+    deletiongraceperiodseconds: null
+    labels:
+        toolchain.dev.openshift.com/basic-tier-hash: f5d03570400265ce243ba6d0916b2e44
+    annotations: {}
+    ownerreferences: []
+    finalizers: []
+    clustername: ""
+    managedfields: []
+spec:
+    userid: f994d97b-5b0d-4f65-946d-0dbbb9cfde34
+    disabled: false
+    banned: false
+    deprovisioned: false
+    useraccounts:
+      - targetcluster: member-cluster
+        syncindex: 123abc
+        spec:
+            useraccountspecbase:
+                nslimit: basic
+                nstemplateset:
+                    tiername: basic
+                    namespaces:
+                      - template: ""
+                        templateref: basic-dev-123abc
+                      - template: ""
+                        templateref: basic-code-123abc
+                      - template: ""
+                        templateref: basic-stage-123abc
+                    clusterresources:
+                        template: ""
+                        templateref: basic-clusterresources-654321a
+status:
+    conditions: []
+    useraccounts: []

@@ -1,1 +1,31 @@
-{"metadata":{"name":"123456","namespace":"toolchain-host-operator","creationTimestamp":null},"spec":{"approved":true,"username":"my-mur@redhat.com"},"status":{}}
+typemeta:
+    kind: ""
+    apiversion: ""
+objectmeta:
+    name: "123456"
+    generatename: ""
+    namespace: toolchain-host-operator
+    selflink: ""
+    uid: ""
+    resourceversion: ""
+    generation: 0
+    creationtimestamp: "0001-01-01T00:00:00Z"
+    deletiontimestamp: null
+    deletiongraceperiodseconds: null
+    labels: {}
+    annotations: {}
+    ownerreferences: []
+    finalizers: []
+    clustername: ""
+    managedfields: []
+spec:
+    targetcluster: ""
+    approved: true
+    deactivated: false
+    username: my-mur@redhat.com
+    givenname: ""
+    familyname: ""
+    company: ""
+status:
+    conditions: []
+    compliantusername: ""
