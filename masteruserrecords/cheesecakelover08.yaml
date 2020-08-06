@@ -1,1 +1,75 @@
-{"kind":"MasterUserRecord","apiVersion":"toolchain.dev.openshift.com/v1alpha1","metadata":{"name":"cheesecakelover08","namespace":"matousjobanek-host-06153307","selfLink":"/apis/toolchain.dev.openshift.com/v1alpha1/namespaces/matousjobanek-host-06153307/masteruserrecords/cheesecakelover08","uid":"5c310129-e0f0-42d5-a642-47e05167aecb","resourceVersion":"1056676","generation":12,"creationTimestamp":"2020-08-06T13:55:09Z","labels":{"toolchain.dev.openshift.com/cheesecake-tier-hash":"c404b8c2206304988d1e05bc5eb108e7","toolchain.dev.openshift.com/user-id":"ff214a25-a926-4034-a771-1662f854a822"},"ownerReferences":[{"apiVersion":"toolchain.dev.openshift.com/v1alpha1","kind":"UserSignup","name":"ff214a25-a926-4034-a771-1662f854a822","uid":"223225c8-7df7-486c-aacd-00812361f2c2","controller":true,"blockOwnerDeletion":true}],"finalizers":["finalizer.toolchain.dev.openshift.com"]},"spec":{"userID":"ff214a25-a926-4034-a771-1662f854a822","userAccounts":[{"targetCluster":"member-crc-45nsk","syncIndex":"1056664","spec":{"nsLimit":"default","nsTemplateSet":{"tierName":"cheesecake","namespaces":[{"templateRef":"advanced-dev-4d49fe0"},{"templateRef":"advanced-stage-4d49fe0"},{"templateRef":"advanced-code-cb6fbd2"}],"clusterResources":{"templateRef":"advanced-clusterresources-07cac69"}}}}]},"status":{"conditions":[{"type":"Ready","status":"True","lastTransitionTime":"2020-08-06T13:56:48Z","reason":"Provisioned"},{"type":"UserProvisionedNotificationCreated","status":"True","lastTransitionTime":"2020-08-06T13:55:21Z","reason":"NotificationCRCreated"}],"userAccounts":[{"cluster":{"name":"member-crc-45nsk","apiEndpoint":"https://api.crc.testing:6443","consoleURL":"https://console-openshift-console.apps-crc.testing/"},"syncIndex":"1056547","conditions":[{"type":"Ready","status":"False","lastTransitionTime":"2020-08-06T14:28:16Z","reason":"Provisioning"}]}]}}
+typemeta:
+    kind: MasterUserRecord
+    apiversion: toolchain.dev.openshift.com/v1alpha1
+objectmeta:
+    name: cheesecakelover08
+    generatename: ""
+    namespace: matousjobanek-host-06171653
+    selflink: /apis/toolchain.dev.openshift.com/v1alpha1/namespaces/matousjobanek-host-06171653/masteruserrecords/cheesecakelover08
+    uid: cb837321-9d80-429f-8083-7beaec983b68
+    resourceversion: "450692"
+    generation: 6
+    creationtimestamp: "2020-08-06T16:09:21Z"
+    deletiontimestamp: null
+    deletiongraceperiodseconds: null
+    labels:
+        toolchain.dev.openshift.com/cheesecake-tier-hash: 45d551ccbf8c3bb75689d6395aa8026a
+        toolchain.dev.openshift.com/user-id: 50045585-eecc-44fd-80ae-2b103df50d28
+    annotations: {}
+    ownerreferences:
+      - apiversion: toolchain.dev.openshift.com/v1alpha1
+        kind: UserSignup
+        name: 50045585-eecc-44fd-80ae-2b103df50d28
+        uid: f88e1349-d915-41cc-b69e-4092854ce5dc
+        controller: true
+        blockownerdeletion: true
+    finalizers:
+      - finalizer.toolchain.dev.openshift.com
+    clustername: ""
+    managedfields: []
+spec:
+    userid: 50045585-eecc-44fd-80ae-2b103df50d28
+    disabled: false
+    banned: false
+    deprovisioned: false
+    useraccounts:
+      - targetcluster: member-crc-45nsk
+        syncindex: "450689"
+        spec:
+            useraccountspecbase:
+                nslimit: default
+                nstemplateset:
+                    tiername: cheesecake
+                    namespaces:
+                      - template: ""
+                        templateref: basic-code-cb6fbd2
+                      - template: ""
+                        templateref: basic-dev-4d49fe0
+                      - template: ""
+                        templateref: basic-stage-4d49fe0
+                    clusterresources:
+                        template: ""
+                        templateref: basic-clusterresources-07cac69
+status:
+    conditions:
+      - type: Ready
+        status: "False"
+        lasttransitiontime: "2020-08-06T16:09:22Z"
+        reason: Updating
+        message: ""
+        lastupdatedtime: null
+    useraccounts:
+      - cluster:
+            name: member-crc-45nsk
+            apiendpoint: https://api.crc.testing:6443
+            consoleurl: https://console-openshift-console.apps-crc.testing/
+            chedashboardurl: ""
+        syncindex: "450648"
+        useraccountstatus:
+            conditions:
+              - type: Ready
+                status: "False"
+                lasttransitiontime: "2020-08-06T16:09:22Z"
+                reason: Updating
+                message: ""
+                lastupdatedtime: null

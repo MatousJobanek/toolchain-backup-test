@@ -7,13 +7,13 @@ objectmeta:
     namespace: matousjobanek-host-06171653
     selflink: /apis/toolchain.dev.openshift.com/v1alpha1/namespaces/matousjobanek-host-06171653/masteruserrecords/cheesecakelover02
     uid: 89074a3a-9539-4b57-a9fc-1260096202cc
-    resourceversion: "449086"
-    generation: 3
+    resourceversion: "450342"
+    generation: 7
     creationtimestamp: "2020-08-06T16:09:18Z"
     deletiontimestamp: null
     deletiongraceperiodseconds: null
     labels:
-        toolchain.dev.openshift.com/basic-tier-hash: 45d551ccbf8c3bb75689d6395aa8026a
+        toolchain.dev.openshift.com/cheesecake-tier-hash: 45d551ccbf8c3bb75689d6395aa8026a
         toolchain.dev.openshift.com/user-id: 6ac1adef-56be-4e5f-bd84-bda63a25b74c
     annotations: {}
     ownerreferences:
@@ -34,12 +34,12 @@ spec:
     deprovisioned: false
     useraccounts:
       - targetcluster: member-crc-45nsk
-        syncindex: "449057"
+        syncindex: "450334"
         spec:
             useraccountspecbase:
                 nslimit: default
                 nstemplateset:
-                    tiername: basic
+                    tiername: cheesecake
                     namespaces:
                       - template: ""
                         templateref: basic-code-cb6fbd2
@@ -53,9 +53,29 @@ spec:
 status:
     conditions:
       - type: Ready
-        status: "False"
-        lasttransitiontime: "2020-08-06T16:09:19Z"
-        reason: Provisioning
+        status: "True"
+        lasttransitiontime: "2020-08-06T16:09:31Z"
+        reason: Provisioned
         message: ""
         lastupdatedtime: null
-    useraccounts: []
+      - type: UserProvisionedNotificationCreated
+        status: "True"
+        lasttransitiontime: "2020-08-06T16:09:30Z"
+        reason: NotificationCRCreated
+        message: ""
+        lastupdatedtime: null
+    useraccounts:
+      - cluster:
+            name: member-crc-45nsk
+            apiendpoint: https://api.crc.testing:6443
+            consoleurl: https://console-openshift-console.apps-crc.testing/
+            chedashboardurl: ""
+        syncindex: "450198"
+        useraccountstatus:
+            conditions:
+              - type: Ready
+                status: "True"
+                lasttransitiontime: "2020-08-06T16:09:30Z"
+                reason: Provisioned
+                message: ""
+                lastupdatedtime: null
