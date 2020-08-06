@@ -7,8 +7,8 @@ objectmeta:
     namespace: matousjobanek-host-06171653
     selflink: /apis/toolchain.dev.openshift.com/v1alpha1/namespaces/matousjobanek-host-06171653/masteruserrecords/johnsmith
     uid: 0b139881-fa10-426e-948e-69f021bc4664
-    resourceversion: "446579"
-    generation: 4
+    resourceversion: "446889"
+    generation: 6
     creationtimestamp: "2020-08-06T16:06:51Z"
     deletiontimestamp: null
     deletiongraceperiodseconds: null
@@ -34,7 +34,7 @@ spec:
     deprovisioned: false
     useraccounts:
       - targetcluster: member-crc-45nsk
-        syncindex: "446574"
+        syncindex: "446888"
         spec:
             useraccountspecbase:
                 nslimit: default
@@ -53,9 +53,15 @@ spec:
 status:
     conditions:
       - type: Ready
-        status: "False"
-        lasttransitiontime: "2020-08-06T16:06:52Z"
-        reason: Provisioning
+        status: "True"
+        lasttransitiontime: "2020-08-06T16:06:58Z"
+        reason: Provisioned
+        message: ""
+        lastupdatedtime: null
+      - type: UserProvisionedNotificationCreated
+        status: "True"
+        lasttransitiontime: "2020-08-06T16:06:58Z"
+        reason: NotificationCRCreated
         message: ""
         lastupdatedtime: null
     useraccounts:
@@ -64,12 +70,12 @@ status:
             apiendpoint: https://api.crc.testing:6443
             consoleurl: https://console-openshift-console.apps-crc.testing/
             chedashboardurl: ""
-        syncindex: "445863"
+        syncindex: "446872"
         useraccountstatus:
             conditions:
               - type: Ready
                 status: "False"
-                lasttransitiontime: "2020-08-06T16:06:52Z"
+                lasttransitiontime: "2020-08-06T16:07:06Z"
                 reason: Provisioning
                 message: ""
                 lastupdatedtime: null
