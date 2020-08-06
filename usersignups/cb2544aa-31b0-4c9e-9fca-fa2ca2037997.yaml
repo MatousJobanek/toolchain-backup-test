@@ -1,0 +1,45 @@
+typemeta:
+    kind: UserSignup
+    apiversion: toolchain.dev.openshift.com/v1alpha1
+objectmeta:
+    name: cb2544aa-31b0-4c9e-9fca-fa2ca2037997
+    generatename: ""
+    namespace: matousjobanek-host-06171653
+    selflink: /apis/toolchain.dev.openshift.com/v1alpha1/namespaces/matousjobanek-host-06171653/usersignups/cb2544aa-31b0-4c9e-9fca-fa2ca2037997
+    uid: 2edab870-6bb2-49f0-b6fe-c769cdf4b703
+    resourceversion: "448402"
+    generation: 2
+    creationtimestamp: "2020-08-06T16:08:47Z"
+    deletiontimestamp: null
+    deletiongraceperiodseconds: null
+    labels:
+        toolchain.dev.openshift.com/email-hash: 364d8d59168b756ef8d1e52c7e9a7b06
+    annotations:
+        toolchain.dev.openshift.com/user-email: 1a4d39f4-342f-49c8-a9c1-024e0410e6fe@email.tld
+    ownerreferences: []
+    finalizers: []
+    clustername: ""
+    managedfields: []
+spec:
+    targetcluster: ""
+    approved: true
+    deactivated: false
+    username: testingtiers
+    givenname: testingtiers-First-Name
+    familyname: testingtiers-Last-Name
+    company: testingtiers-Company-Name
+status:
+    conditions:
+      - type: Approved
+        status: "True"
+        lasttransitiontime: "2020-08-06T16:08:47Z"
+        reason: ApprovedByAdmin
+        message: ""
+        lastupdatedtime: null
+      - type: Complete
+        status: "True"
+        lasttransitiontime: "2020-08-06T16:08:47Z"
+        reason: ""
+        message: ""
+        lastupdatedtime: null
+    compliantusername: testingtiers
