@@ -1,0 +1,45 @@
+typemeta:
+    kind: UserSignup
+    apiversion: toolchain.dev.openshift.com/v1alpha1
+objectmeta:
+    name: 95d5afc8-e43f-491d-a8cc-6920ae8414e9
+    generatename: ""
+    namespace: matousjobanek-host-06171653
+    selflink: /apis/toolchain.dev.openshift.com/v1alpha1/namespaces/matousjobanek-host-06171653/usersignups/95d5afc8-e43f-491d-a8cc-6920ae8414e9
+    uid: c2cd543d-b51c-40c2-a9dd-c342f705e5e8
+    resourceversion: "445649"
+    generation: 1
+    creationtimestamp: "2020-08-06T16:06:51Z"
+    deletiontimestamp: null
+    deletiongraceperiodseconds: null
+    labels:
+        toolchain.dev.openshift.com/email-hash: 362899927d097d143e655096af402bd6
+    annotations:
+        toolchain.dev.openshift.com/user-email: multiple-signup-testuser-3@test.com
+    ownerreferences: []
+    finalizers: []
+    clustername: ""
+    managedfields: []
+spec:
+    targetcluster: member-crc-45nsk
+    approved: true
+    deactivated: false
+    username: multiple-signup-testuser-3
+    givenname: ""
+    familyname: ""
+    company: ""
+status:
+    conditions:
+      - type: Approved
+        status: "True"
+        lasttransitiontime: "2020-08-06T16:06:51Z"
+        reason: ApprovedByAdmin
+        message: ""
+        lastupdatedtime: null
+      - type: Complete
+        status: "True"
+        lasttransitiontime: "2020-08-06T16:06:51Z"
+        reason: ""
+        message: ""
+        lastupdatedtime: null
+    compliantusername: multiple-signup-testuser-3

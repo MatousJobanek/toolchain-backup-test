@@ -1,0 +1,45 @@
+typemeta:
+    kind: UserSignup
+    apiversion: toolchain.dev.openshift.com/v1alpha1
+objectmeta:
+    name: dcac2188-992c-4b65-a18c-97d94d8e034d
+    generatename: ""
+    namespace: matousjobanek-host-06171653
+    selflink: /apis/toolchain.dev.openshift.com/v1alpha1/namespaces/matousjobanek-host-06171653/usersignups/dcac2188-992c-4b65-a18c-97d94d8e034d
+    uid: 6af68f85-85d0-41e6-8e9f-5e15c84d73a2
+    resourceversion: "445672"
+    generation: 2
+    creationtimestamp: "2020-08-06T16:06:51Z"
+    deletiontimestamp: null
+    deletiongraceperiodseconds: null
+    labels:
+        toolchain.dev.openshift.com/email-hash: 00074402a53c0ee94f942936d537f0ab
+    annotations:
+        toolchain.dev.openshift.com/user-email: 5705bc06-3530-4480-81d6-35d0a210db64@email.tld
+    ownerreferences: []
+    finalizers: []
+    clustername: ""
+    managedfields: []
+spec:
+    targetcluster: ""
+    approved: true
+    deactivated: false
+    username: extrajohn
+    givenname: extrajohn-First-Name
+    familyname: extrajohn-Last-Name
+    company: extrajohn-Company-Name
+status:
+    conditions:
+      - type: Approved
+        status: "True"
+        lasttransitiontime: "2020-08-06T16:06:51Z"
+        reason: ApprovedByAdmin
+        message: ""
+        lastupdatedtime: null
+      - type: Complete
+        status: "True"
+        lasttransitiontime: "2020-08-06T16:06:51Z"
+        reason: ""
+        message: ""
+        lastupdatedtime: null
+    compliantusername: extrajohn

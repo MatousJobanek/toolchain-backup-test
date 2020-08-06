@@ -1,1 +1,75 @@
-{"kind":"MasterUserRecord","apiVersion":"toolchain.dev.openshift.com/v1alpha1","metadata":{"name":"multiple-signup-testuser-4","namespace":"matousjobanek-host-06153307","selfLink":"/apis/toolchain.dev.openshift.com/v1alpha1/namespaces/matousjobanek-host-06153307/masteruserrecords/multiple-signup-testuser-4","uid":"ef605848-8975-423c-9f73-adece084fb6b","resourceVersion":"1040814","generation":3,"creationTimestamp":"2020-08-06T13:52:00Z","deletionTimestamp":"2020-08-06T13:54:01Z","deletionGracePeriodSeconds":0,"labels":{"toolchain.dev.openshift.com/basic-tier-hash":"45d551ccbf8c3bb75689d6395aa8026a","toolchain.dev.openshift.com/user-id":"5ead6f94-c145-44ef-8c09-ef621a26d5ce"},"ownerReferences":[{"apiVersion":"toolchain.dev.openshift.com/v1alpha1","kind":"UserSignup","name":"5ead6f94-c145-44ef-8c09-ef621a26d5ce","uid":"b411d81e-6b9d-4119-937c-587b45dae8f9","controller":true,"blockOwnerDeletion":true}],"finalizers":["finalizer.toolchain.dev.openshift.com"]},"spec":{"userID":"5ead6f94-c145-44ef-8c09-ef621a26d5ce","userAccounts":[{"targetCluster":"member-crc-45nsk","syncIndex":"1039756","spec":{"nsLimit":"default","nsTemplateSet":{"tierName":"basic","namespaces":[{"templateRef":"basic-code-cb6fbd2"},{"templateRef":"basic-dev-4d49fe0"},{"templateRef":"basic-stage-4d49fe0"}],"clusterResources":{"templateRef":"basic-clusterresources-07cac69"}}}}]},"status":{"conditions":[{"type":"Ready","status":"True","lastTransitionTime":"2020-08-06T13:52:26Z","reason":"Provisioned"},{"type":"UserProvisionedNotificationCreated","status":"True","lastTransitionTime":"2020-08-06T13:52:26Z","reason":"NotificationCRCreated"}],"userAccounts":[{"cluster":{"name":"member-crc-45nsk","apiEndpoint":"https://api.crc.testing:6443","consoleURL":"https://console-openshift-console.apps-crc.testing/"},"syncIndex":"1039756","conditions":[{"type":"Ready","status":"True","lastTransitionTime":"2020-08-06T13:52:19Z","reason":"Provisioned"}]}]}}
+typemeta:
+    kind: MasterUserRecord
+    apiversion: toolchain.dev.openshift.com/v1alpha1
+objectmeta:
+    name: multiple-signup-testuser-4
+    generatename: ""
+    namespace: matousjobanek-host-06171653
+    selflink: /apis/toolchain.dev.openshift.com/v1alpha1/namespaces/matousjobanek-host-06171653/masteruserrecords/multiple-signup-testuser-4
+    uid: 7caa1f6e-86f2-486b-b846-25cbb7ff655c
+    resourceversion: "446575"
+    generation: 4
+    creationtimestamp: "2020-08-06T16:06:51Z"
+    deletiontimestamp: null
+    deletiongraceperiodseconds: null
+    labels:
+        toolchain.dev.openshift.com/basic-tier-hash: 45d551ccbf8c3bb75689d6395aa8026a
+        toolchain.dev.openshift.com/user-id: b408be36-de36-424b-8209-46185b89be74
+    annotations: {}
+    ownerreferences:
+      - apiversion: toolchain.dev.openshift.com/v1alpha1
+        kind: UserSignup
+        name: b408be36-de36-424b-8209-46185b89be74
+        uid: 128f5a3d-1ad8-42b5-8210-6614b281aa9d
+        controller: true
+        blockownerdeletion: true
+    finalizers:
+      - finalizer.toolchain.dev.openshift.com
+    clustername: ""
+    managedfields: []
+spec:
+    userid: b408be36-de36-424b-8209-46185b89be74
+    disabled: false
+    banned: false
+    deprovisioned: false
+    useraccounts:
+      - targetcluster: member-crc-45nsk
+        syncindex: "446573"
+        spec:
+            useraccountspecbase:
+                nslimit: default
+                nstemplateset:
+                    tiername: basic
+                    namespaces:
+                      - template: ""
+                        templateref: basic-code-cb6fbd2
+                      - template: ""
+                        templateref: basic-dev-4d49fe0
+                      - template: ""
+                        templateref: basic-stage-4d49fe0
+                    clusterresources:
+                        template: ""
+                        templateref: basic-clusterresources-07cac69
+status:
+    conditions:
+      - type: Ready
+        status: "False"
+        lasttransitiontime: "2020-08-06T16:06:52Z"
+        reason: Provisioning
+        message: ""
+        lastupdatedtime: null
+    useraccounts:
+      - cluster:
+            name: member-crc-45nsk
+            apiendpoint: https://api.crc.testing:6443
+            consoleurl: https://console-openshift-console.apps-crc.testing/
+            chedashboardurl: ""
+        syncindex: "445832"
+        useraccountstatus:
+            conditions:
+              - type: Ready
+                status: "False"
+                lasttransitiontime: "2020-08-06T16:06:52Z"
+                reason: Provisioning
+                message: ""
+                lastupdatedtime: null

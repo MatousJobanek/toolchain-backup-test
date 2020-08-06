@@ -1,0 +1,45 @@
+typemeta:
+    kind: UserSignup
+    apiversion: toolchain.dev.openshift.com/v1alpha1
+objectmeta:
+    name: e5f8ce1a-f5bb-468f-83de-a76df74e32fe
+    generatename: ""
+    namespace: matousjobanek-host-06171653
+    selflink: /apis/toolchain.dev.openshift.com/v1alpha1/namespaces/matousjobanek-host-06171653/usersignups/e5f8ce1a-f5bb-468f-83de-a76df74e32fe
+    uid: 728d1b52-ce1c-46a1-908d-7d58cba8c3fd
+    resourceversion: "445656"
+    generation: 2
+    creationtimestamp: "2020-08-06T16:06:51Z"
+    deletiontimestamp: null
+    deletiongraceperiodseconds: null
+    labels:
+        toolchain.dev.openshift.com/email-hash: c21abe4e23e77663c4a90a934eda928d
+    annotations:
+        toolchain.dev.openshift.com/user-email: b28a5143-15f3-49ea-9f9c-c36ab516be45@email.tld
+    ownerreferences: []
+    finalizers: []
+    clustername: ""
+    managedfields: []
+spec:
+    targetcluster: ""
+    approved: true
+    deactivated: false
+    username: johnsmith
+    givenname: johnsmith-First-Name
+    familyname: johnsmith-Last-Name
+    company: johnsmith-Company-Name
+status:
+    conditions:
+      - type: Approved
+        status: "True"
+        lasttransitiontime: "2020-08-06T16:06:51Z"
+        reason: ApprovedByAdmin
+        message: ""
+        lastupdatedtime: null
+      - type: Complete
+        status: "True"
+        lasttransitiontime: "2020-08-06T16:06:51Z"
+        reason: ""
+        message: ""
+        lastupdatedtime: null
+    compliantusername: johnsmith
