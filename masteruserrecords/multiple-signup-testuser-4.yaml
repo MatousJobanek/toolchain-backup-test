@@ -7,11 +7,11 @@ objectmeta:
     namespace: matousjobanek-host-06171653
     selflink: /apis/toolchain.dev.openshift.com/v1alpha1/namespaces/matousjobanek-host-06171653/masteruserrecords/multiple-signup-testuser-4
     uid: 7caa1f6e-86f2-486b-b846-25cbb7ff655c
-    resourceversion: "446575"
-    generation: 4
+    resourceversion: "447680"
+    generation: 5
     creationtimestamp: "2020-08-06T16:06:51Z"
-    deletiontimestamp: null
-    deletiongraceperiodseconds: null
+    deletiontimestamp: "2020-08-06T16:08:33Z"
+    deletiongraceperiodseconds: 0
     labels:
         toolchain.dev.openshift.com/basic-tier-hash: 45d551ccbf8c3bb75689d6395aa8026a
         toolchain.dev.openshift.com/user-id: b408be36-de36-424b-8209-46185b89be74
@@ -53,9 +53,15 @@ spec:
 status:
     conditions:
       - type: Ready
-        status: "False"
-        lasttransitiontime: "2020-08-06T16:06:52Z"
-        reason: Provisioning
+        status: "True"
+        lasttransitiontime: "2020-08-06T16:06:58Z"
+        reason: Provisioned
+        message: ""
+        lastupdatedtime: null
+      - type: UserProvisionedNotificationCreated
+        status: "True"
+        lasttransitiontime: "2020-08-06T16:06:58Z"
+        reason: NotificationCRCreated
         message: ""
         lastupdatedtime: null
     useraccounts:
@@ -64,12 +70,12 @@ status:
             apiendpoint: https://api.crc.testing:6443
             consoleurl: https://console-openshift-console.apps-crc.testing/
             chedashboardurl: ""
-        syncindex: "445832"
+        syncindex: "446573"
         useraccountstatus:
             conditions:
               - type: Ready
-                status: "False"
-                lasttransitiontime: "2020-08-06T16:06:52Z"
-                reason: Provisioning
+                status: "True"
+                lasttransitiontime: "2020-08-06T16:06:58Z"
+                reason: Provisioned
                 message: ""
                 lastupdatedtime: null

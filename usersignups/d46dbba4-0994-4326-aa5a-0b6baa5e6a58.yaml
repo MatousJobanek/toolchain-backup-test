@@ -1,0 +1,45 @@
+typemeta:
+    kind: UserSignup
+    apiversion: toolchain.dev.openshift.com/v1alpha1
+objectmeta:
+    name: d46dbba4-0994-4326-aa5a-0b6baa5e6a58
+    generatename: ""
+    namespace: matousjobanek-host-06171653
+    selflink: /apis/toolchain.dev.openshift.com/v1alpha1/namespaces/matousjobanek-host-06171653/usersignups/d46dbba4-0994-4326-aa5a-0b6baa5e6a58
+    uid: 2c9ed79a-a197-489b-a336-13d36ad0eacf
+    resourceversion: "447776"
+    generation: 2
+    creationtimestamp: "2020-08-06T16:08:34Z"
+    deletiontimestamp: null
+    deletiongraceperiodseconds: null
+    labels:
+        toolchain.dev.openshift.com/email-hash: b97b553c20ef28bfd50451928d3603ed
+    annotations:
+        toolchain.dev.openshift.com/user-email: 04489312-3449-470e-9c07-976c244b2d7a@email.tld
+    ownerreferences: []
+    finalizers: []
+    clustername: ""
+    managedfields: []
+spec:
+    targetcluster: ""
+    approved: true
+    deactivated: false
+    username: janedoe
+    givenname: janedoe-First-Name
+    familyname: janedoe-Last-Name
+    company: janedoe-Company-Name
+status:
+    conditions:
+      - type: Approved
+        status: "True"
+        lasttransitiontime: "2020-08-06T16:08:34Z"
+        reason: ApprovedByAdmin
+        message: ""
+        lastupdatedtime: null
+      - type: Complete
+        status: "True"
+        lasttransitiontime: "2020-08-06T16:08:35Z"
+        reason: ""
+        message: ""
+        lastupdatedtime: null
+    compliantusername: janedoe
