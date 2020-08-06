@@ -1,1 +1,81 @@
-{"kind":"MasterUserRecord","apiVersion":"toolchain.dev.openshift.com/v1alpha1","metadata":{"name":"cookielover00","namespace":"matousjobanek-host-06153307","selfLink":"/apis/toolchain.dev.openshift.com/v1alpha1/namespaces/matousjobanek-host-06153307/masteruserrecords/cookielover00","uid":"055586dc-511d-405a-94ca-b0086f7a3a9d","resourceVersion":"1056687","generation":14,"creationTimestamp":"2020-08-06T13:55:23Z","labels":{"toolchain.dev.openshift.com/cookie-tier-hash":"45d551ccbf8c3bb75689d6395aa8026a","toolchain.dev.openshift.com/user-id":"39a40548-b2d9-489c-a08c-8f3cb9cd804a"},"ownerReferences":[{"apiVersion":"toolchain.dev.openshift.com/v1alpha1","kind":"UserSignup","name":"39a40548-b2d9-489c-a08c-8f3cb9cd804a","uid":"0bfd270b-6f1f-441a-85aa-5adedc0c7cea","controller":true,"blockOwnerDeletion":true}],"finalizers":["finalizer.toolchain.dev.openshift.com"]},"spec":{"userID":"39a40548-b2d9-489c-a08c-8f3cb9cd804a","userAccounts":[{"targetCluster":"member-crc-45nsk","syncIndex":"1056671","spec":{"nsLimit":"default","nsTemplateSet":{"tierName":"cookie","namespaces":[{"templateRef":"basic-dev-4d49fe0"},{"templateRef":"basic-stage-4d49fe0"},{"templateRef":"basic-code-cb6fbd2"}],"clusterResources":{"templateRef":"basic-clusterresources-07cac69"}}}}]},"status":{"conditions":[{"type":"Ready","status":"True","lastTransitionTime":"2020-08-06T13:56:48Z","reason":"Provisioned"},{"type":"UserProvisionedNotificationCreated","status":"True","lastTransitionTime":"2020-08-06T13:55:30Z","reason":"NotificationCRCreated"}],"userAccounts":[{"cluster":{"name":"member-crc-45nsk","apiEndpoint":"https://api.crc.testing:6443","consoleURL":"https://console-openshift-console.apps-crc.testing/"},"syncIndex":"1056578","conditions":[{"type":"Ready","status":"False","lastTransitionTime":"2020-08-06T14:28:16Z","reason":"Provisioning"}]}]}}
+typemeta:
+    kind: MasterUserRecord
+    apiversion: toolchain.dev.openshift.com/v1alpha1
+objectmeta:
+    name: cookielover00
+    generatename: ""
+    namespace: matousjobanek-host-06171653
+    selflink: /apis/toolchain.dev.openshift.com/v1alpha1/namespaces/matousjobanek-host-06171653/masteruserrecords/cookielover00
+    uid: 771cbf67-a419-485b-b284-50a35ee70e3e
+    resourceversion: "451853"
+    generation: 8
+    creationtimestamp: "2020-08-06T16:09:35Z"
+    deletiontimestamp: null
+    deletiongraceperiodseconds: null
+    labels:
+        toolchain.dev.openshift.com/cookie-tier-hash: 45d551ccbf8c3bb75689d6395aa8026a
+        toolchain.dev.openshift.com/user-id: 223a2176-6dba-4277-bdd7-de155a7594d4
+    annotations: {}
+    ownerreferences:
+      - apiversion: toolchain.dev.openshift.com/v1alpha1
+        kind: UserSignup
+        name: 223a2176-6dba-4277-bdd7-de155a7594d4
+        uid: 0fb8072d-4200-4583-a6b2-f7e32a6aa4de
+        controller: true
+        blockownerdeletion: true
+    finalizers:
+      - finalizer.toolchain.dev.openshift.com
+    clustername: ""
+    managedfields: []
+spec:
+    userid: 223a2176-6dba-4277-bdd7-de155a7594d4
+    disabled: false
+    banned: false
+    deprovisioned: false
+    useraccounts:
+      - targetcluster: member-crc-45nsk
+        syncindex: "451693"
+        spec:
+            useraccountspecbase:
+                nslimit: default
+                nstemplateset:
+                    tiername: cookie
+                    namespaces:
+                      - template: ""
+                        templateref: basic-code-cb6fbd2
+                      - template: ""
+                        templateref: basic-dev-4d49fe0
+                      - template: ""
+                        templateref: basic-stage-4d49fe0
+                    clusterresources:
+                        template: ""
+                        templateref: basic-clusterresources-07cac69
+status:
+    conditions:
+      - type: Ready
+        status: "True"
+        lasttransitiontime: "2020-08-06T16:09:43Z"
+        reason: Provisioned
+        message: ""
+        lastupdatedtime: null
+      - type: UserProvisionedNotificationCreated
+        status: "True"
+        lasttransitiontime: "2020-08-06T16:09:42Z"
+        reason: NotificationCRCreated
+        message: ""
+        lastupdatedtime: null
+    useraccounts:
+      - cluster:
+            name: member-crc-45nsk
+            apiendpoint: https://api.crc.testing:6443
+            consoleurl: https://console-openshift-console.apps-crc.testing/
+            chedashboardurl: ""
+        syncindex: "451683"
+        useraccountstatus:
+            conditions:
+              - type: Ready
+                status: "False"
+                lasttransitiontime: "2020-08-06T16:09:43Z"
+                reason: Updating
+                message: ""
+                lastupdatedtime: null

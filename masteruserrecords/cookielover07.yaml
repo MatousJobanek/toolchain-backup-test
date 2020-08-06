@@ -1,1 +1,61 @@
-{"kind":"MasterUserRecord","apiVersion":"toolchain.dev.openshift.com/v1alpha1","metadata":{"name":"cookielover07","namespace":"matousjobanek-host-06153307","selfLink":"/apis/toolchain.dev.openshift.com/v1alpha1/namespaces/matousjobanek-host-06153307/masteruserrecords/cookielover07","uid":"e550c372-288a-4478-b961-9c00c1106a8f","resourceVersion":"1056786","generation":11,"creationTimestamp":"2020-08-06T13:55:28Z","labels":{"toolchain.dev.openshift.com/cookie-tier-hash":"45d551ccbf8c3bb75689d6395aa8026a","toolchain.dev.openshift.com/user-id":"7aa7bf94-3fa6-4403-842e-bc71f7eaba75"},"ownerReferences":[{"apiVersion":"toolchain.dev.openshift.com/v1alpha1","kind":"UserSignup","name":"7aa7bf94-3fa6-4403-842e-bc71f7eaba75","uid":"9f4002e2-567a-4adb-abf5-b5f76e5cd180","controller":true,"blockOwnerDeletion":true}],"finalizers":["finalizer.toolchain.dev.openshift.com"]},"spec":{"userID":"7aa7bf94-3fa6-4403-842e-bc71f7eaba75","userAccounts":[{"targetCluster":"member-crc-45nsk","syncIndex":"1056783","spec":{"nsLimit":"default","nsTemplateSet":{"tierName":"cookie","namespaces":[{"templateRef":"basic-dev-4d49fe0"},{"templateRef":"basic-stage-4d49fe0"},{"templateRef":"basic-code-cb6fbd2"}],"clusterResources":{"templateRef":"basic-clusterresources-07cac69"}}}}]},"status":{"conditions":[{"type":"Ready","status":"True","lastTransitionTime":"2020-08-06T13:56:52Z","reason":"Provisioned"},{"type":"UserProvisionedNotificationCreated","status":"True","lastTransitionTime":"2020-08-06T13:55:31Z","reason":"NotificationCRCreated"}],"userAccounts":[{"cluster":{"name":"member-crc-45nsk","apiEndpoint":"https://api.crc.testing:6443","consoleURL":"https://console-openshift-console.apps-crc.testing/"},"syncIndex":"1056714","conditions":[{"type":"Ready","status":"False","lastTransitionTime":"2020-08-06T14:28:18Z","reason":"UnableToProvisionClusteResources","message":"the host cluster is not ready"}]}]}}
+typemeta:
+    kind: MasterUserRecord
+    apiversion: toolchain.dev.openshift.com/v1alpha1
+objectmeta:
+    name: cookielover07
+    generatename: ""
+    namespace: matousjobanek-host-06171653
+    selflink: /apis/toolchain.dev.openshift.com/v1alpha1/namespaces/matousjobanek-host-06171653/masteruserrecords/cookielover07
+    uid: ed1d5951-3169-4289-b1aa-3f5ab22996a1
+    resourceversion: "451103"
+    generation: 2
+    creationtimestamp: "2020-08-06T16:09:38Z"
+    deletiontimestamp: null
+    deletiongraceperiodseconds: null
+    labels:
+        toolchain.dev.openshift.com/basic-tier-hash: 45d551ccbf8c3bb75689d6395aa8026a
+        toolchain.dev.openshift.com/user-id: 09ff7f38-0353-4894-811c-8c11475e32d3
+    annotations: {}
+    ownerreferences:
+      - apiversion: toolchain.dev.openshift.com/v1alpha1
+        kind: UserSignup
+        name: 09ff7f38-0353-4894-811c-8c11475e32d3
+        uid: ea2bf5eb-c7b9-44b9-ae2e-7e1e7fbe6cbb
+        controller: true
+        blockownerdeletion: true
+    finalizers:
+      - finalizer.toolchain.dev.openshift.com
+    clustername: ""
+    managedfields: []
+spec:
+    userid: 09ff7f38-0353-4894-811c-8c11475e32d3
+    disabled: false
+    banned: false
+    deprovisioned: false
+    useraccounts:
+      - targetcluster: member-crc-45nsk
+        syncindex: "451073"
+        spec:
+            useraccountspecbase:
+                nslimit: default
+                nstemplateset:
+                    tiername: basic
+                    namespaces:
+                      - template: ""
+                        templateref: basic-code-cb6fbd2
+                      - template: ""
+                        templateref: basic-dev-4d49fe0
+                      - template: ""
+                        templateref: basic-stage-4d49fe0
+                    clusterresources:
+                        template: ""
+                        templateref: basic-clusterresources-07cac69
+status:
+    conditions:
+      - type: Ready
+        status: "False"
+        lasttransitiontime: "2020-08-06T16:09:38Z"
+        reason: Provisioning
+        message: ""
+        lastupdatedtime: null
+    useraccounts: []

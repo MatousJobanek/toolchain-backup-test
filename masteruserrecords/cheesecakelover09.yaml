@@ -7,13 +7,13 @@ objectmeta:
     namespace: matousjobanek-host-06171653
     selflink: /apis/toolchain.dev.openshift.com/v1alpha1/namespaces/matousjobanek-host-06171653/masteruserrecords/cheesecakelover09
     uid: a077f8c7-e1bb-403a-a099-9a80c66bef38
-    resourceversion: "449470"
-    generation: 3
+    resourceversion: "450743"
+    generation: 6
     creationtimestamp: "2020-08-06T16:09:21Z"
     deletiontimestamp: null
     deletiongraceperiodseconds: null
     labels:
-        toolchain.dev.openshift.com/basic-tier-hash: 45d551ccbf8c3bb75689d6395aa8026a
+        toolchain.dev.openshift.com/cheesecake-tier-hash: 45d551ccbf8c3bb75689d6395aa8026a
         toolchain.dev.openshift.com/user-id: 3ebb5047-7e58-4977-b8f7-92ea2841c93a
     annotations: {}
     ownerreferences:
@@ -34,12 +34,12 @@ spec:
     deprovisioned: false
     useraccounts:
       - targetcluster: member-crc-45nsk
-        syncindex: "449432"
+        syncindex: "450741"
         spec:
             useraccountspecbase:
                 nslimit: default
                 nstemplateset:
-                    tiername: basic
+                    tiername: cheesecake
                     namespaces:
                       - template: ""
                         templateref: basic-code-cb6fbd2
@@ -55,7 +55,21 @@ status:
       - type: Ready
         status: "False"
         lasttransitiontime: "2020-08-06T16:09:22Z"
-        reason: Provisioning
+        reason: Updating
         message: ""
         lastupdatedtime: null
-    useraccounts: []
+    useraccounts:
+      - cluster:
+            name: member-crc-45nsk
+            apiendpoint: https://api.crc.testing:6443
+            consoleurl: https://console-openshift-console.apps-crc.testing/
+            chedashboardurl: ""
+        syncindex: "450709"
+        useraccountstatus:
+            conditions:
+              - type: Ready
+                status: "False"
+                lasttransitiontime: "2020-08-06T16:09:22Z"
+                reason: Updating
+                message: ""
+                lastupdatedtime: null

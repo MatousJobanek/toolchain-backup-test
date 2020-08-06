@@ -1,0 +1,45 @@
+typemeta:
+    kind: UserSignup
+    apiversion: toolchain.dev.openshift.com/v1alpha1
+objectmeta:
+    name: 280c2f9a-bdf7-49da-bbbc-d85838b200ad
+    generatename: ""
+    namespace: matousjobanek-host-06171653
+    selflink: /apis/toolchain.dev.openshift.com/v1alpha1/namespaces/matousjobanek-host-06171653/usersignups/280c2f9a-bdf7-49da-bbbc-d85838b200ad
+    uid: ff0f67cc-f076-4e97-b3c2-7a346f96fe77
+    resourceversion: "450847"
+    generation: 2
+    creationtimestamp: "2020-08-06T16:09:36Z"
+    deletiontimestamp: null
+    deletiongraceperiodseconds: null
+    labels:
+        toolchain.dev.openshift.com/email-hash: 5b1f77dbf806384151ab8df6723af137
+    annotations:
+        toolchain.dev.openshift.com/user-email: 91099b19-751a-4214-b65a-5eec8626ab52@email.tld
+    ownerreferences: []
+    finalizers: []
+    clustername: ""
+    managedfields: []
+spec:
+    targetcluster: ""
+    approved: true
+    deactivated: false
+    username: cookielover02
+    givenname: cookielover02-First-Name
+    familyname: cookielover02-Last-Name
+    company: cookielover02-Company-Name
+status:
+    conditions:
+      - type: Approved
+        status: "True"
+        lasttransitiontime: "2020-08-06T16:09:36Z"
+        reason: ApprovedByAdmin
+        message: ""
+        lastupdatedtime: null
+      - type: Complete
+        status: "True"
+        lasttransitiontime: "2020-08-06T16:09:36Z"
+        reason: ""
+        message: ""
+        lastupdatedtime: null
+    compliantusername: cookielover02
