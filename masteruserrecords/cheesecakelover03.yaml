@@ -1,1 +1,61 @@
-{"kind":"MasterUserRecord","apiVersion":"toolchain.dev.openshift.com/v1alpha1","metadata":{"name":"cheesecakelover03","namespace":"matousjobanek-host-06153307","selfLink":"/apis/toolchain.dev.openshift.com/v1alpha1/namespaces/matousjobanek-host-06153307/masteruserrecords/cheesecakelover03","uid":"a0ec615f-2960-4944-ba83-60af119220f3","resourceVersion":"1056681","generation":11,"creationTimestamp":"2020-08-06T13:55:05Z","labels":{"toolchain.dev.openshift.com/cheesecake-tier-hash":"c404b8c2206304988d1e05bc5eb108e7","toolchain.dev.openshift.com/user-id":"e015ac26-bf74-41d0-bdab-e85e171e27fb"},"ownerReferences":[{"apiVersion":"toolchain.dev.openshift.com/v1alpha1","kind":"UserSignup","name":"e015ac26-bf74-41d0-bdab-e85e171e27fb","uid":"9765734f-1967-42fe-ab52-740f697bdc8a","controller":true,"blockOwnerDeletion":true}],"finalizers":["finalizer.toolchain.dev.openshift.com"]},"spec":{"userID":"e015ac26-bf74-41d0-bdab-e85e171e27fb","userAccounts":[{"targetCluster":"member-crc-45nsk","syncIndex":"1056667","spec":{"nsLimit":"default","nsTemplateSet":{"tierName":"cheesecake","namespaces":[{"templateRef":"advanced-code-cb6fbd2"},{"templateRef":"advanced-dev-4d49fe0"},{"templateRef":"advanced-stage-4d49fe0"}],"clusterResources":{"templateRef":"advanced-clusterresources-07cac69"}}}}]},"status":{"conditions":[{"type":"Ready","status":"True","lastTransitionTime":"2020-08-06T13:56:51Z","reason":"Provisioned"},{"type":"UserProvisionedNotificationCreated","status":"True","lastTransitionTime":"2020-08-06T13:55:17Z","reason":"NotificationCRCreated"}],"userAccounts":[{"cluster":{"name":"member-crc-45nsk","apiEndpoint":"https://api.crc.testing:6443","consoleURL":"https://console-openshift-console.apps-crc.testing/"},"syncIndex":"1056562","conditions":[{"type":"Ready","status":"False","lastTransitionTime":"2020-08-06T14:28:16Z","reason":"Provisioning"}]}]}}
+typemeta:
+    kind: MasterUserRecord
+    apiversion: toolchain.dev.openshift.com/v1alpha1
+objectmeta:
+    name: cheesecakelover03
+    generatename: ""
+    namespace: matousjobanek-host-06171653
+    selflink: /apis/toolchain.dev.openshift.com/v1alpha1/namespaces/matousjobanek-host-06171653/masteruserrecords/cheesecakelover03
+    uid: 79e45b92-2ca4-45d9-9a83-bbd93dc59978
+    resourceversion: "449100"
+    generation: 2
+    creationtimestamp: "2020-08-06T16:09:18Z"
+    deletiontimestamp: null
+    deletiongraceperiodseconds: null
+    labels:
+        toolchain.dev.openshift.com/basic-tier-hash: 45d551ccbf8c3bb75689d6395aa8026a
+        toolchain.dev.openshift.com/user-id: fcacf284-6996-4bd1-8e17-bb294cc3ea0a
+    annotations: {}
+    ownerreferences:
+      - apiversion: toolchain.dev.openshift.com/v1alpha1
+        kind: UserSignup
+        name: fcacf284-6996-4bd1-8e17-bb294cc3ea0a
+        uid: 0dc6dda7-57f2-4066-86d5-5dbd34176e89
+        controller: true
+        blockownerdeletion: true
+    finalizers:
+      - finalizer.toolchain.dev.openshift.com
+    clustername: ""
+    managedfields: []
+spec:
+    userid: fcacf284-6996-4bd1-8e17-bb294cc3ea0a
+    disabled: false
+    banned: false
+    deprovisioned: false
+    useraccounts:
+      - targetcluster: member-crc-45nsk
+        syncindex: "449074"
+        spec:
+            useraccountspecbase:
+                nslimit: default
+                nstemplateset:
+                    tiername: basic
+                    namespaces:
+                      - template: ""
+                        templateref: basic-code-cb6fbd2
+                      - template: ""
+                        templateref: basic-dev-4d49fe0
+                      - template: ""
+                        templateref: basic-stage-4d49fe0
+                    clusterresources:
+                        template: ""
+                        templateref: basic-clusterresources-07cac69
+status:
+    conditions:
+      - type: Ready
+        status: "False"
+        lasttransitiontime: "2020-08-06T16:09:19Z"
+        reason: Provisioning
+        message: ""
+        lastupdatedtime: null
+    useraccounts: []

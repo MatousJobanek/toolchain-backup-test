@@ -7,13 +7,13 @@ objectmeta:
     namespace: matousjobanek-host-06171653
     selflink: /apis/toolchain.dev.openshift.com/v1alpha1/namespaces/matousjobanek-host-06171653/masteruserrecords/testingtiers
     uid: f87be322-0ce3-4b8e-a56b-414a945c4112
-    resourceversion: "448671"
-    generation: 12
+    resourceversion: "448850"
+    generation: 17
     creationtimestamp: "2020-08-06T16:08:47Z"
     deletiontimestamp: null
     deletiongraceperiodseconds: null
     labels:
-        toolchain.dev.openshift.com/team-tier-hash: 08fc6aecfc990399d772b7d09daa4058
+        toolchain.dev.openshift.com/basic-tier-hash: 45d551ccbf8c3bb75689d6395aa8026a
         toolchain.dev.openshift.com/user-id: cb2544aa-31b0-4c9e-9fca-fa2ca2037997
     annotations: {}
     ownerreferences:
@@ -34,25 +34,27 @@ spec:
     deprovisioned: false
     useraccounts:
       - targetcluster: member-crc-45nsk
-        syncindex: "448670"
+        syncindex: "448849"
         spec:
             useraccountspecbase:
                 nslimit: default
                 nstemplateset:
-                    tiername: team
+                    tiername: basic
                     namespaces:
                       - template: ""
-                        templateref: team-dev-4d49fe0
+                        templateref: basic-code-cb6fbd2
                       - template: ""
-                        templateref: team-stage-4d49fe0
+                        templateref: basic-dev-4d49fe0
+                      - template: ""
+                        templateref: basic-stage-4d49fe0
                     clusterresources:
                         template: ""
-                        templateref: team-clusterresources-07cac69
+                        templateref: basic-clusterresources-07cac69
 status:
     conditions:
       - type: Ready
         status: "True"
-        lasttransitiontime: "2020-08-06T16:09:00Z"
+        lasttransitiontime: "2020-08-06T16:09:09Z"
         reason: Provisioned
         message: ""
         lastupdatedtime: null
@@ -68,12 +70,14 @@ status:
             apiendpoint: https://api.crc.testing:6443
             consoleurl: https://console-openshift-console.apps-crc.testing/
             chedashboardurl: ""
-        syncindex: "448623"
+        syncindex: "448828"
         useraccountstatus:
             conditions:
               - type: Ready
-                status: "True"
-                lasttransitiontime: "2020-08-06T16:08:55Z"
-                reason: Provisioned
-                message: ""
+                status: "False"
+                lasttransitiontime: "2020-08-06T16:09:09Z"
+                reason: UnableToProvisionNamespace
+                message: 'Operation cannot be fulfilled on namespaces "testingtiers-code":
+                    the object has been modified; please apply your changes to the
+                    latest version and try again'
                 lastupdatedtime: null

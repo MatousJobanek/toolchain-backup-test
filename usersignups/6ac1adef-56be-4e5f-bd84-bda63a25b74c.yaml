@@ -1,0 +1,45 @@
+typemeta:
+    kind: UserSignup
+    apiversion: toolchain.dev.openshift.com/v1alpha1
+objectmeta:
+    name: 6ac1adef-56be-4e5f-bd84-bda63a25b74c
+    generatename: ""
+    namespace: matousjobanek-host-06171653
+    selflink: /apis/toolchain.dev.openshift.com/v1alpha1/namespaces/matousjobanek-host-06171653/usersignups/6ac1adef-56be-4e5f-bd84-bda63a25b74c
+    uid: f8ba3c3c-4217-411d-b5f0-b3704761b8d0
+    resourceversion: "448919"
+    generation: 2
+    creationtimestamp: "2020-08-06T16:09:18Z"
+    deletiontimestamp: null
+    deletiongraceperiodseconds: null
+    labels:
+        toolchain.dev.openshift.com/email-hash: cce577852a049cecfd2e7cef6739ef89
+    annotations:
+        toolchain.dev.openshift.com/user-email: f9e3ad60-2f3d-4365-a963-7a48c8f7475f@email.tld
+    ownerreferences: []
+    finalizers: []
+    clustername: ""
+    managedfields: []
+spec:
+    targetcluster: ""
+    approved: true
+    deactivated: false
+    username: cheesecakelover02
+    givenname: cheesecakelover02-First-Name
+    familyname: cheesecakelover02-Last-Name
+    company: cheesecakelover02-Company-Name
+status:
+    conditions:
+      - type: Approved
+        status: "True"
+        lasttransitiontime: "2020-08-06T16:09:18Z"
+        reason: ApprovedByAdmin
+        message: ""
+        lastupdatedtime: null
+      - type: Complete
+        status: "True"
+        lasttransitiontime: "2020-08-06T16:09:18Z"
+        reason: ""
+        message: ""
+        lastupdatedtime: null
+    compliantusername: cheesecakelover02
